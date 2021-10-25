@@ -35,9 +35,10 @@ namespace Tienda_Programacion
                     case "7":
                         break;
                     case "8":
+                        Option_acerca_de();
                         break;
                     case "9":
-                        option_salir();
+                        Option_salir();
                         break;
                     default:
                         Console.WriteLine("No selecciono una opcion correcta, intente nuevamente.");
@@ -62,10 +63,26 @@ namespace Tienda_Programacion
                 );
         }
 
-        static void option_salir()
+        //Option 8
+        static void Option_acerca_de() {
+            Console.WriteLine(
+                "\n"+
+                "-----------------------------------------------"+
+                "Trabajo Realizado por:"+
+                "   Josue Quinche Parra - Estudiante UPB"+
+                "-----------------------------------------------"
+                );
+        }
+
+        //Option 9
+        static void Option_salir()
         {
-            Console.WriteLine("Gracias por su visita.");
+            Console.WriteLine(
+                "\n"+
+                "-----------------------------------------------"+
+                "Gracias por su visita.");
             Thread.Sleep(3000);
         }
+
     }
 }
