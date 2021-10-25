@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Tienda_Programacion
@@ -36,6 +37,7 @@ namespace Tienda_Programacion
                     case "8":
                         break;
                     case "9":
+                        option_salir();
                         break;
                     default:
                         Console.WriteLine("No selecciono una opcion correcta, intente nuevamente.");
@@ -58,6 +60,12 @@ namespace Tienda_Programacion
                 "\n 8. Acerca de" +
                 "\n 9. Salir"
                 );
+        }
+
+        static void option_salir()
+        {
+            Console.WriteLine("Gracias por su visita.");
+            Thread.Sleep(3000);
         }
     }
 }
